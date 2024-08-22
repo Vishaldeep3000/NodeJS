@@ -1,3 +1,4 @@
 #Enter the file which we dont want to be monitored by git
 #maybe file like node modules - which consumes a lot of space
 waiter.js
+node_modules
