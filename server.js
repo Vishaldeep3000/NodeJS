@@ -1,11 +1,13 @@
 const express = require('express');
 const app = express();
 const db =  require('./db');
+require('dotenv').config();
 
 const bodyParser = require('body-parser');
 app.use(bodyParser.json()); //as we know we are sendin data in JSON format from postMan
 
-app.listen(3000);
+const PORT = process.env.PORT;
+app.listen(PORT);
 
 //stating URL
 app.get('/', function(req, res){
